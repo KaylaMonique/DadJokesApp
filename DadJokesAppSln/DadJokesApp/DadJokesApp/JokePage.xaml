@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:service="clr-namespace:DadJokesApp.Models.Service"
+             x:Class="DadJokesApp.JokePage" Title="Dad Joke" x:DataType="service:DadJoke">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding joke }"/>
+            <Button x:Name="JokeButton" Text="New Joke" Clicked="JokeButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
